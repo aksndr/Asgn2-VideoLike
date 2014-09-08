@@ -18,7 +18,6 @@
           <element id="library" level="project" name="Gradle: spring-boot-starter-security-1.0.2.RELEASE" />
           <element id="library" level="project" name="Gradle: spring-security-oauth2-2.0.0.RC2" />
           <element id="library" level="project" name="Gradle: spring-security-oauth2-javaconfig-1.0.0.M1" />
-          <element id="library" level="project" name="Gradle: hsqldb-2.3.2" />
           <element id="library" level="project" name="Gradle: guava-17.0" />
           <element id="library" level="project" name="Gradle: commons-lang3-3.3.2" />
           <element id="library" level="project" name="Gradle: httpclient-4.3.4" />
@@ -98,6 +97,7 @@
           <element id="library" level="project" name="Gradle: gson-2.2.4" />
           <element id="library" level="project" name="Gradle: commons-collections-3.2.1" />
           <element id="library" level="project" name="Gradle: commons-beanutils-1.9.2" />
+          <element id="library" level="project" name="Gradle: mysql-connector-java-5.1.6" />
         </element>
       </element>
       <element id="directory" name="META-INF">
