@@ -76,7 +76,7 @@ public class AutoGrading {
 	public static void main(String[] args) throws Exception {
 
 		// Ensure that this application is run within the correct working directory
-        File f = new File("./src/main/org/magnum/mobilecloud/video/Application.java");
+        File f = new File("./src/main/java/org/magnum/mobilecloud/video/Application.java");
         if (!f.exists()) {
 			System.out
 					.println(WordUtils
@@ -89,10 +89,11 @@ public class AutoGrading {
 		}
 
 		// Ensure that the server is running and accessible on port 8443
-		try {
+        HttpResponse response;
+        try {
 			HttpClient client = UnsafeHttpsClient.createUnsafeClient();
-			HttpResponse response = 
-					client.execute(new HttpHost("127.0.0.1", 8443), new BasicHttpRequest("GET", "/"));
+            response =
+                    client.execute(new HttpHost("127.0.0.1", 8443), new BasicHttpRequest("GET", "/"));
 			
 			response.getStatusLine();
 		} catch (NoHttpResponseException e) { 

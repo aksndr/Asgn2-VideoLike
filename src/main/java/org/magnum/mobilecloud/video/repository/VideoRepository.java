@@ -15,10 +15,8 @@ import java.util.Collection;
 @RepositoryRestResource(path = VideoSvcApi.VIDEO_SVC_PATH)
 public interface VideoRepository extends CrudRepository<Video, Long> {
 
-
-    @Query("SELECT DISTINCT v FROM Video v " +
-            "left join fetch v.like " +
-            "WHERE v.id = :id")
+    //"left join fetch v.like " +
+    @Query("SELECT DISTINCT v FROM Video v WHERE v.id = :id")
     public Video findById(@Param("id") Long id);
 
     public Collection<Video> findByName(

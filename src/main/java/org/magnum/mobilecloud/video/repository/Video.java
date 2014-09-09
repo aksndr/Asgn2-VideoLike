@@ -3,7 +3,6 @@ package org.magnum.mobilecloud.video.repository;
 import com.google.common.base.Objects;
 
 import javax.persistence.*;
-import java.util.Set;
 
 /**
  * A simple object to represent a video and its URL for viewing.
@@ -40,8 +39,8 @@ public class Video {
     @Column(name = "likes")
     private long likes;
 
-    @OneToMany(mappedBy = "video_id")
-    private Set<Like> like;
+//    @OneToMany(mappedBy = "video_id")
+//    private Set<Like> like = new HashSet<Like>();
 
 	public Video() {
 	}
@@ -54,13 +53,13 @@ public class Video {
 		this.likes = likes;
 	}
 
-    public Set<Like> getLikeSet() {
-        return like;
-    }
-
-    public void setLikeSet(Set<Like> likeSet) {
-        this.like = likeSet;
-    }
+//    public Set<Like> getLikeSet() {
+//        return like;
+//    }
+//
+//    public void setLikeSet(Set<Like> likeSet) {
+//        this.like = likeSet;
+//    }
 
     public String getName() {
         return name;
